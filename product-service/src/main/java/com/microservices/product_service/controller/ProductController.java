@@ -9,6 +9,7 @@ import com.microservices.product_service.service.ProductService;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,6 +18,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/api/product")
 @AutoGeneratePage(name = "Product Service")
+@CrossOrigin
 public class ProductController {
 
     private final ProductService productService;

@@ -11,8 +11,8 @@ import java.util.UUID;
 @Getter
 @Setter
 public class ProductRequest {
-    private List<ProductItem> productItems;
     private UUID sellerId;
+//    private List<ProductItem> productItems;
     private String name;
     private String description;
     private BigDecimal price;
